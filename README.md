@@ -12,3 +12,6 @@
 ### How it is organized
 - Dockerfile describe how to build the image
 - webapps contains python web service application including test files
+
+### How to deploy and run
+
