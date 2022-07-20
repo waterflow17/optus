@@ -1,24 +1,27 @@
 ## Optus BOM Container Web Service in Cloud
 
 ### Design
-- BOM data is from this [URL](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
-- It uses Python with Flask web service module to:
+- BOM data is [here](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
+- This project uses Python with Flask web service module to:
   - read the data from bom url (shown above)
   - parse and filter the temperature greater than 10.
   - return the json object
 - It uses Docker container to host the python application mentioned above
-- It is deployed via Heroku, a platform-as-a-service designed for developers, free for small apps.
+- It is deployed and hosted by Heroku, a platform-as-a-service designed for developers, free for small apps.
 
 ### How it is organized
 - Dockerfile describe how to build the image
 - webapps contains python web service application including test files
+- README.md is this file
 
 ### How to deploy and run
 - Pre-requirement:
   - Install heroku, git, docker in your development environment. 
+  - The detail installation instruction is beyond the scope of this document.
+    Please refer to their websites for reference.
 - Deploy
   - First create a heroku app
-    `$ heroku create`
+    <br>`$ heroku create`
   - Build the image and push to Container Registry: `$ heroku container:push web`
   - Then release the image to your app: `$ heroku container:release web`
 - Run
