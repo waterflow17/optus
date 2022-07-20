@@ -1,4 +1,4 @@
-## This is project to read from BOM data, filter and display result as json
+## Optus BOM Container Web Service in Cloud
 
 ### Design
 - BOM data is from this [URL](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
