@@ -1,7 +1,10 @@
 ## Optus BOM Container Web Service in Cloud
 
 ### App URL
-- Demo is [here](https://calm-inlet-96529.herokuapp.com)
+- Application is [here](https://calm-inlet-96529.herokuapp.com)
+
+### Demo video
+- Demo video is [here](https://youtu.be/u_mK2QOtaq0)
 `
 ### Design
 - This project uses Python with Flask web service module to:
@@ -67,5 +70,4 @@ fields. Instead I found 'lon' which is in the json response.
     - So I use 10 degree instead. 
     - You can filter and pass any degree you want by using  `?apparent_t=20` in the url.
 4. The host heroku/bom sometimes may have a glitche which I encoutnered this morning (20/07/2022), when demo app returned error message 'forbidden' (from BOM). I am not sure it is from heroku or BOM. After restarting the app, it was back working. 
-
 
