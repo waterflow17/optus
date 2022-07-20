@@ -20,6 +20,8 @@
 - Unit Test
   - The unit test cases are in webapp/tests.py
   - To run it, use `python3 webapp/tests.py`, (you need to have Flask module installed via pip3)
+- Funtion Test
+  - Use `$ python3 webapp/app.py` to start up local application and test it before pushing to heroku remote server.
 - System Test
   - Testing senarios include
     - Mimic error response from BOM
