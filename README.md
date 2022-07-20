@@ -17,6 +17,17 @@
 - webapps contains python web service application including test files
 - README.md is this file
 
+### How to test
+- Unit Test
+  - The unit test cases are in webapp/tests.py
+  - To run it, use `python3 webapp/tests.py`, (you need to have Flask module installed via pip3)
+- System Test
+  - Refer to 'How to use' section below for detailed instruction
+  - Testing senarios include
+    - Mimic error response from BOM
+    - Passing different temperature as parameters including invalid string
+    - Check and compare with original BOM data.
+
 ### How to deploy and run
 - Pre-requirement:
   - Install heroku, git, docker in your development environment. 
@@ -53,3 +64,6 @@ fields. Instead I found 'lon' which is in the json response.
   - The requirement is to use 20, but after using it, it will return none records in our current weather.
   - So I use 10 degree instead. 
   - You can filter and pass any degree you want by using  `?apparent_t=20` in the url.
+4. The host heroku/bom may have a glitche which I encoutnered this morning (20/07/2022), when demo app returned error message 'forbidden' (from BOM). I am not sure it is from heroku or BOM. After restarting the app, it was back working. 
+
+
