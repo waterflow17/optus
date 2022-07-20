@@ -1,7 +1,7 @@
 ## Optus BOM Container Web Service in Cloud
 
 ### App URL
-- App url is [here](https://calm-inlet-96529.herokuapp.com)
+- Demo is [here](https://calm-inlet-96529.herokuapp.com)
 `
 ### Design
 - BOM data is [here](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
