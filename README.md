@@ -4,9 +4,8 @@
 - Demo is [here](https://calm-inlet-96529.herokuapp.com)
 `
 ### Design
-- BOM data is [here](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
 - This project uses Python with Flask web service module to:
-  - read the data from bom url (shown above)
+  - read the data from BOM data, url is [here](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
   - parse and filter the temperature greater than 10.
   - return the json object
 - It uses Docker container to host the python application mentioned above
@@ -22,11 +21,11 @@
   - The unit test cases are in webapp/tests.py
   - To run it, use `python3 webapp/tests.py`, (you need to have Flask module installed via pip3)
 - System Test
-  - Refer to 'How to use' section below for detailed instruction
   - Testing senarios include
     - Mimic error response from BOM
     - Passing different temperature as parameters including invalid string
     - Check and compare with original BOM data.
+  - Refer to 'How to use' section below for detailed instruction
 
 ### How to deploy and run
 - Pre-requirement:
@@ -48,6 +47,7 @@
 ### How to use
 - Main query, run the default and return information when temperature is greater than 10, with name,
     apparent_t (temperature), lat, lon.
+    Example link is [here](https://calm-inlet-96529.herokuapp.com)
 - Filter by temperature, by passing `/?apparent_t=15.5`, this will return information when tempeature is greater
     than 15.5 degree. Example link is [here](https://calm-inlet-96529.herokuapp.com/?apparent_t=15.5)
 - Mimic error response from BOM, by passing `/?createErrorResponse=True`, this will return error message. Exampla    link is [here](https://calm-inlet-96529.herokuapp.com/?createErrorResponse=True)
