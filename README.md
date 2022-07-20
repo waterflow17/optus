@@ -17,6 +17,9 @@
 - Pre-requirement:
   - Install heroku, git, docker in your development environment. 
 - Deploy
-  - First create a heroku app 
-    `heroku create`
-  - Build the image and push to Container Registry:
+  - First create a heroku app
+    `$ heroku create`
+  - Build the image and push to Container Registry: `$ heroku container:push web`
+  - Then release the image to your app: `$ heroku container:release web`
+  - Now open the app in your browser: `heroku open`
+  - Note: in the example, the app has already deployed [here](https://calm-inlet-96529.herokuapp.com)
