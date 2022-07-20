@@ -54,16 +54,16 @@
 
 ### Notes
 1. **Use field 'lon' instead of 'long'**
-  - One of the requirement is to return field 'long' from BOM response, but I can't find any corresponding
+    - One of the requirement is to return field 'long' from BOM response, but I can't find any corresponding
 fields. Instead I found 'lon' which is in the json response. 
 2. Use user-agent
-  - when using programs (either curl, or python web service request) to query BOM server, I got permission denied.
-  - This is due to BOM to prevent web scrape practice
-  - To get around this issue, I add user-agent in the web request header
+    - when using programs (either curl, or python web service request) to query BOM server, I got permission denied.
+    - This is due to BOM to prevent web scrape practice
+    - To get around this issue, I add user-agent in the web request header
 3. **Use 10 instead of 20 as filtering temperature**
-  - The requirement is to use 20, but after using it, it will return none records in our current weather.
-  - So I use 10 degree instead. 
-  - You can filter and pass any degree you want by using  `?apparent_t=20` in the url.
-4. The host heroku/bom may have a glitche which I encoutnered this morning (20/07/2022), when demo app returned error message 'forbidden' (from BOM). I am not sure it is from heroku or BOM. After restarting the app, it was back working. 
+    - The requirement is to use 20, but after using it, it will return none records in our current weather.
+    - So I use 10 degree instead. 
+    - You can filter and pass any degree you want by using  `?apparent_t=20` in the url.
+4. The host heroku/bom sometimes may have a glitche which I encoutnered this morning (20/07/2022), when demo app returned error message 'forbidden' (from BOM). I am not sure it is from heroku or BOM. After restarting the app, it was back working. 
 
 
