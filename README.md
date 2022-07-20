@@ -1,6 +1,7 @@
 ## Optus BOM Container Web Service in Cloud
 
-### URL to view the app is [here](https://calm-inlet-96529.herokuapp.com)
+### App URL
+- App url is [here](https://calm-inlet-96529.herokuapp.com)
 `
 ### Design
 - BOM data is [here](http://www.bom.gov.au/fwo/IDN60801/IDN60801.95765.json) 
@@ -48,7 +49,7 @@ fields. Instead I found 'lon' which is in the json response.
   - when using programs (either curl, or python web service request) to query BOM server, I got permission denied.
   - This is due to BOM to prevent web scrape practice
   - To get around this issue, I add user-agent in the web request header
-3. **Use 10 instead of 20** as filtering temperature
+3. **Use 10 instead of 20 as filtering temperature**
   - The requirement is to use 20, but after using it, it will return none records in our current weather.
   - So I use 10 degree instead. 
   - You can filter and pass any degree you want by using  `?apparent_t=20` in the url.
