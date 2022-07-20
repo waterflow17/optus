@@ -17,5 +17,6 @@
 - Pre-requirement:
   - Install heroku, git, docker in your development environment. 
 - Deploy
-  - First create a heroku app `heroku create`
+  - First create a heroku app 
+    `heroku create`
   - Build the image and push to Container Registry:
